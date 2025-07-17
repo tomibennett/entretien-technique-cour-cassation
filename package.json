@@ -13,8 +13,10 @@
   "license": "GPL-3.0-or-later",
   "author": "",
   "type": "module",
-  "main": "index.js",
   "scripts": {
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "build": "npm run frontend:build",
     "start": "npx tsx src/app.ts",
     "test": "npx vitest"
   },

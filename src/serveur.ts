@@ -3,6 +3,7 @@ import * as http from "node:http";
 import { IncomingMessage, ServerResponse } from "node:http";
 import { RepertoireDeServices } from "./repertoireDeServices";
 import { ServicePropose } from "./ServicePropose";
+import * as path from "path";
 
 function recupereLesServices(repertoireDeServices: RepertoireDeServices): ServicePropose[] {
   return repertoireDeServices.tous();
@@ -17,9 +18,7 @@ export function demarreServeur(port: string, repertoireDeServices: RepertoireDeS
     reponse.send(services);
   });
 
-  serveur.get("/", (_, reponse: Response) => {
-    reponse.send({ donnee: "coucou" });
-  });
+  serveur.use("/", express.static(path.join(import.meta.dirname, "../frontend/dist")));
 
   return serveur.listen(port);
 }

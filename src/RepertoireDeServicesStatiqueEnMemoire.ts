@@ -6,9 +6,16 @@ export class RepertoireDeServicesStatiqueEnMemoire implements RepertoireDeServic
     nom: "nom",
     version: "version",
     description: "description",
-    miniature: "miniature",
+    miniature: "https://mna-bucket.s3.eu-west-3.amazonaws.com/test-tech/beta.jpeg",
     lien: "lien",
-  }];
+  },
+    {
+      nom: "nom2",
+      version: "version2",
+      description: "description2",
+      miniature: "https://mna-bucket.s3.eu-west-3.amazonaws.com/test-tech/beta.jpeg",
+      lien: "lien",
+    }];
 
   constructor() {
 
