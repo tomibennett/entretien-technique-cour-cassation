@@ -16,12 +16,9 @@
   "license": "GPL-3.0-or-later",
   "author": "",
   "type": "module",
- "workspaces": [
-   "frontend", "backend"
- ],
   "scripts": {
-    "build": "npm run -w frontend build",
-    "start": "npm run -w backend start"
+    "start": "npx tsx src/app.ts",
+    "test": "npx vitest"
   },
   "dependencies": {
     "express": "^5.1.0",

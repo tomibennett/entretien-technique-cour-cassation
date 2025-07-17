@@ -18,7 +18,7 @@ export function demarreServeur(port: string, repertoireDeServices: RepertoireDeS
     reponse.send(services);
   });
 
-  serveur.use("/", express.static(path.join(import.meta.dirname, "../frontend/dist")));
+  serveur.use("/", express.static(path.join(import.meta.dirname, "../../frontend/dist")));
 
   return serveur.listen(port);
 }
