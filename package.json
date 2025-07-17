@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/tomibennett/entretien-technique-cour-cassation.git"
   },
+  "engines": {
+    "node": "22"
+  },
   "license": "GPL-3.0-or-later",
   "author": "",
   "type": "module",
