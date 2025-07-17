@@ -3,7 +3,7 @@ import path from "path";
 import { RepertoireDeServicesXlsx } from "../src/RepertoireDeServicesXlsx";
 
 describe("RepertoiresServicesXlsx", () => {
-  it("retourne les services présent dans un fichier au format xlsx", () => {
+  it("retourne les services présents dans un fichier au format xlsx", () => {
     const repertoireDeServicesXlsx = new RepertoireDeServicesXlsx(path.join(import.meta.dirname, "./services.xlsx"));
 
     const services = repertoireDeServicesXlsx.tous();

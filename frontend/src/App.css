@@ -23,6 +23,7 @@ h2 {
   gap: 32px;
   padding: 8px;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .carte-service {

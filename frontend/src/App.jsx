@@ -6,7 +6,6 @@ function App() {
 
   useEffect(() => {
     async function recupereServices() {
-
       const response = await fetch(`${import.meta.env["VITE_BACKEND_URL"]}/api/services`);
 
       const services = await response.json();
