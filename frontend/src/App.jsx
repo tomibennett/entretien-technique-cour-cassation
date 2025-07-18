@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <h1>Catalogue des servies</h1>
+      <h1>Catalogue des services</h1>
       <p>Vous trouverez ici l'ensemble des services référencées, la documentation associée et les modalités de souscription.</p>
 
       <div id="catalogue">
