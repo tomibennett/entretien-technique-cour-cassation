@@ -1,4 +1,4 @@
-import { RepertoireDeServices } from "./repertoireDeServices";
+import { RepertoireDeServices } from "./RepertoireDeServices";
 import { ServicePropose } from "./ServicePropose";
 import XLSX from "xlsx";
 
